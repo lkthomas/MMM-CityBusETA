@@ -11,7 +11,7 @@
 
 2. Clone this repository:
     ```bash
-    git clone https://github.com/yourusername/MMM-CityBusETA.git
+    git clone https://github.com/lkthomas/MMM-CityBusETA.git
     ```
 
 3. Navigate to the `MMM-CityBusETA` folder:
@@ -35,4 +35,16 @@ To use this module, add it to the `config.js` file of your MagicMirror setup. Be
     config: {
         updateInterval: 10000  // Update interval in milliseconds (default is 10000)
     }
+}
+
+## Example use case
+I only want to show the the bus schedule in the weekday morning time, so I could combine it with scheduler with the following config:
+
+{
+    module: 'MMM-CityBusETA',
+	position: 'middle_center',
+	classes: 'scheduler',
+	config: {
+		module_schedule: { from: '30 8 * * 1-5', to: '15 9 * * 1-5'},
+	}
 }
