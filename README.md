@@ -36,10 +36,11 @@ To use this module, add it to the `config.js` file of your MagicMirror setup. Be
         updateInterval: 10000  // Update interval in milliseconds (default is 10000)
     }
 }
-
+```
 ## Example use case
 I only want to show the the bus schedule in the weekday morning time, so I could combine it with scheduler with the following config:
 
+```javascript
 {
     module: 'MMM-CityBusETA',
 	position: 'middle_center',
@@ -48,3 +49,4 @@ I only want to show the the bus schedule in the weekday morning time, so I could
 		module_schedule: { from: '30 8 * * 1-5', to: '15 9 * * 1-5'},
 	}
 }
+```
