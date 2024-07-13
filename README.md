@@ -50,3 +50,6 @@ I only want to show the the bus schedule in the weekday morning time, so I could
 	}
 }
 ```
+
+## API specification document
+https://www.citybus.com.hk/datagovhk/bus_eta_api_specifications.pdf
