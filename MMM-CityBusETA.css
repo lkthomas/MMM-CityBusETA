@@ -1,0 +1,35 @@
+/* CSS for MMM-CityBusETA module */
+.MMM-CityBusETA .normal {
+    color: #00FF00; /* Bright green */
+}
+
+.MMM-CityBusETA .critical {
+    color: red; /* Red text color for urgency */
+    animation: blinker 5s step-end infinite; /* Solid blinking effect every 5 seconds */
+}
+
+@keyframes blinker {
+    0%, 90% {
+        opacity: 1;  /* Visible for 90% of the time */
+    }
+    91%, 100% {
+        opacity: 0;  /* Invisible for just 10% of the time */
+    }
+}
+
+/* Adjust the position of the MMM-CityBusETA module */
+.region.middle.center .MMM-CityBusETA {
+    margin-top: 120px; /* Adjust this value as needed */
+}
+
+/* Styling for minute and second displays */
+.MMM-CityBusETA .minutes-large {
+    font-size: 28px;  /* Larger font size for minutes */
+    font-weight: bold;
+    color: inherit;  /* Inherits the color from parent, be it .normal or .critical */
+}
+
+.MMM-CityBusETA .seconds-small {
+    font-size: 16px;  /* Smaller font size for seconds */
+    color: inherit;  /* Inherits the color from parent */
+}
